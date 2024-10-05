@@ -38,3 +38,18 @@ function solve(arr){
 };
 
 // or
+
+function solve(arr){  
+  let array = new Array();
+  arr.forEach(function(value){
+    let count = 0
+    value.split('').forEach(function(val,index){
+      if(val.toLowerCase().charCodeAt()-97===index){
+        count++;
+      }
+        
+    });
+    array.push(count);
+  });
+  return array;
+  };
