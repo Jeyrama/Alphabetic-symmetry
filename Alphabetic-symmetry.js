@@ -36,3 +36,5 @@ function solve(arr){
   }
   return final
 };
+
+// or
